@@ -1,0 +1,10 @@
+extends layout
+
+block content 
+    form(action="/new",method="POST")
+        p
+            | text:
+            input(type="text",name="text",value="")
+            | user: 
+            input(type="text",name="user",value="")
+        input(type="submit",value="Submit")
